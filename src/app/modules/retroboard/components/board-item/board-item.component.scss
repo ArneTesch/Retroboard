@@ -1,0 +1,62 @@
+@import '../../../shared/styles/_variables.scss';
+
+.board-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary;
+  color: white;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid white;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($primary, 3%);
+  }
+}
+
+h2, .simple-text {
+  margin: 0 2.4rem 0;
+  text-transform: capitalize;
+}
+
+h2 {
+  position: relative;
+  padding-bottom: .5rem;
+
+  &:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 2.5rem;
+    height: .2rem;
+    background-color: white;
+  }
+}
+
+.board-item-content {
+  height: 100%;
+  width: 100%;
+  margin: 1.5rem 0;
+
+}
+
+.btn-delete {
+  border: none;
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  background-color: transparent;
+  outline: none;
+
+  & .fa.fa-trash {
+    font-size: 2.1rem;
+    color: white
+  }
+}
+
+.simple-text {
+  padding: .5rem 0;
+}

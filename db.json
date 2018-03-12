@@ -1,0 +1,22 @@
+{
+  "RetroItems": [
+    {
+      "id": "971fa19c-626d-49a1-ec9f-9c75bd42fdc5",
+      "title": "2 week sprints",
+      "description": "Do sprints of 2 weeks instead of 4",
+      "category": "start doing"
+    },
+    {
+      "id": "3444636e-3bfb-7f08-5999-e2624c75a8d0",
+      "title": "test",
+      "description": "test",
+      "category": "keep doing"
+    },
+    {
+      "id": "6077370d-f3e3-917d-e5b5-34328e49ef0b",
+      "title": "test",
+      "description": "testt",
+      "category": "stop doing"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+@import '../../../shared/styles/_variables.scss';
+
+.sidebar {
+  width: 32rem;
+  background-color: $secondary;
+  height: calc(100vh - 4.5rem);
+  position: fixed;
+  bottom: 0;
+  padding: 0 1.5rem;
+}

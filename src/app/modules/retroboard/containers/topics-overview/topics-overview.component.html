@@ -1,0 +1,61 @@
+<div class="retro-overview">
+  <div class="retro-topbar">
+    <div class="retro-topbar__title">
+      <h2>Keep doing</h2>
+    </div>
+    <div class="retro-topbar__title">
+      <h2>Start doing</h2>
+    </div>
+    <div class="retro-topbar__title">
+      <h2>Stop doing</h2>
+    </div>
+  </div>
+  <div class="retro-content">
+    <div id="keepDoing" class="retro-content__col" [dragula]="'bag'">
+      <app-retro-item
+        *ngFor="let item of keepDoing$ | async"
+        [title]="item.title"
+        [description]="item.description"
+        [item]="item"
+        [attr.data-el]="item | json"
+        [attr.data-id]="item.id"
+        (deleteItem)="handleDelete($event)"
+      ></app-retro-item>
+    </div>
+    <div id="startDoing" class="retro-content__col" [dragula]="'bag'">
+      <app-retro-item
+        *ngFor="let item of startDoing$ | async"
+        [title]="item.title"
+        [description]="item.description"
+        [item]="item"
+        [attr.data-el]="item | json"
+        [attr.data-id]="item.id"
+        (deleteItem)="handleDelete($event)"
+      ></app-retro-item>
+    </div>
+    <div id="stopDoing" class="retro-content__col" [dragula]="'bag'">
+      <app-retro-item
+        *ngFor="let item of stopDoing$ | async"
+        [title]="item.title"
+        [description]="item.description"
+        [item]="item"
+        [attr.data-el]="item | json"
+        [attr.data-id]="item.id"
+        (deleteItem)="handleDelete($event)"
+      ></app-retro-item>
+    </div>
+  </div>
+</div>
+
+<div *appSidebar>
+  <app-create-retro-form
+    (createItem)="createTopic($event)"
+  ></app-create-retro-form>
+</div>
+
+<button
+  *appTopbar
+  class="btn btn-back"
+  (click)="navigate()">
+  <i class="fa fa-arrow-left"></i>
+</button>

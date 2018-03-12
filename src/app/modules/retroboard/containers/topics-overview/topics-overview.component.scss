@@ -1,0 +1,54 @@
+@import '../../../shared/styles/variables';
+
+.retro-overview {
+    margin: 6.5rem 10rem 0 40rem;
+    width: 75%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+
+  & .retro-topbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: $primary;
+
+    & .retro-topbar__title {
+      color: white;
+      text-align: center;
+      width: 33.33%;
+      border-right: 1px solid white;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  & .retro-content {
+    display: flex;
+    flex-flow: row nowrap;
+
+    & .retro-content__col {
+      width: 33.33%;
+      height: 300px;
+      border-right: 1px solid white;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+}
+
+
+.btn-back {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-left: 1.5rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+  outline: none;
+}

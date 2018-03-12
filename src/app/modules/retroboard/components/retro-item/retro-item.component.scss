@@ -1,0 +1,52 @@
+@import '../../../shared/styles/variables';
+
+.retro-item {
+  margin: 0;
+  padding: 1rem;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2),
+  0 2px 2px 0 rgba(0, 0, 0, .14),
+  0 1px 5px 0 rgba(0, 0, 0, .12);
+  list-style-type: none;
+  background-color: white;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  cursor: move;
+
+  & h3 {
+    margin: 0;
+  }
+
+  & p {
+    margin-bottom: 0;
+  }
+
+  & .btn-delete {
+    border: none;
+    cursor: pointer;
+    height: 3rem;
+
+    & .fa.fa-trash {
+      font-size: 1.8rem;
+      color: $secondary;
+    }
+  }
+
+  &:hover {
+    background-color: #fafafa;
+
+    & .btn-delete {
+      background-color: #fafafa;
+    }
+  }
+}
+.category {
+  text-align: center;
+  max-width: 30rem;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2),
+  0 2px 2px 0 rgba(0, 0, 0, .14),
+  0 1px 5px 0 rgba(0, 0, 0, .12);
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
